@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
 
   </head>
   <body>
-    <button id="autoBtn">Auto</button>
-    <button id="captureBtn"></button>
-    <button id="poseBtn">POSE</button>
-    
-    <button id="screenBtn" onclick="toggleFullscreen()">전체 화면 전환</button>
-    
-    
+    <div id="camera-app">
+    <div class="header">
+      <div class="camera-icon"></div>
+      <div class="flash-icon"></div>
+    </div>
+    <div class="camera-container">
+      <!-- 여기에 캔버스가 독립적으로 생성됩니다 -->
+    </div>
+    <div class="footer">
+      <div class="gallery-icon"></div>
+      <div class="switch-camera-icon"></div>
+    </div>
+  </div>
     <script src="sketch.js"></script>
   </body>
 </html>
