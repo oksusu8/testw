@@ -1,63 +1,39 @@
-html {
+html, body {
   margin: 0;
   padding: 0;
 }
 
 canvas {
   display: block;
-  border: 2px solid #000;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  /*background-color: #000000;*/
+.shutterBtn {
+  background-color: white;
+  border : black solid;
+  border-radius : 50%;
 }
 
-#camera-container {
-  position: relative;
+.autoBtn {
+  background-color: black;
+  opacity: 35%;
+  border-radius : 50%;
+  border: none;
   
-  /*추가 항목*/
-  width: 100%; height: 66vh;
+  color: #ff9900;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  
 }
 
-video {/*추가 항목*/
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#autoBtn {
-  position: absolute;
-  /*bottom: 20px;*/
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: #fff;
-  border: 3px solid red; /*none*/
-  /*cursor: pointer;*/
-  font-size: 16px;
-}
-
-#bottom-container {
-  position: relative;
-  background-color: blue;
-}
-
-#captureBtn {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: #fff;
-  border: 3px solid red; /*none*/
-  /*cursor: pointer;*/
-  font-size: 16px;
+.poseBtn {
+  background-color: #242424;
+  border-radius : 8px;
+  border: none;
+  
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  
+  
 }
