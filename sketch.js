@@ -51,7 +51,7 @@ function setup() {
   
   poseBtn = createButton('POSE');
   poseBtn.class('poseBtn');
-  poseBtn.position(width-(width*0.2), height*0.88-(height*0.09)/2);
+  poseBtn.position(width-(width*0.3), height*0.88-(height*0.09)/2);
   poseBtn.size(height*0.11, height*0.1);
   
   shutterBtn.mousePressed(capture);
